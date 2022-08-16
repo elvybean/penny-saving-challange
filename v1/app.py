@@ -15,8 +15,8 @@ def penny_save(j: int):
 
 def interateAdder(_list: list):
     k = 0
-    for elm in _list:
-        k += elm
+    for l in _list:
+        k += l
     return k
 
 
@@ -37,7 +37,7 @@ def main():
     match bool(daysStarted == 0):
         case False:
             reduntacy = interateAdder(penny_save(daysStarted+1))
-            print("Your redundancy to catch up is £", reduntacy)
+            print("In order to catch up our redundancy to catch up is £", reduntacy)
 
     pennyValues = interateAdder(penny_save(366))
     print("At the end of the 365 days you'll have £", pennyValues)
